@@ -44,8 +44,8 @@ public class TestJedis {
         System.out.println(jedisCluster);
         //使用JedisCluster操作Redis，自带连接池。JedisCluster可以是单例的
         jedisCluster.set("cluster-test","hello jedis cluster");
-       *//* String result = jedisCluster.get("cluster-test");
-        System.out.println(result);*//*
+        String result = jedisCluster.get("cluster-test");
+        System.out.println(result);
         //系统关闭前，关闭JedisCluster
         jedisCluster.close();
     }*/
