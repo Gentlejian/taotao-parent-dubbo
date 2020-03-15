@@ -1,3 +1,4 @@
+/*
 package com.taotao.fastdfs;
 
 import org.csource.fastdfs.ClientGlobal;
@@ -9,11 +10,13 @@ import org.junit.Test;
 
 import com.taotao.utils.FastDFSClient;
 
+*/
 /**
  * @author zhangjianfeng
  * @date 2020/2/28
  * FastDFS 测试
- */
+ *//*
+
 public class TestFastDFS {
 
 	@Test
@@ -45,3 +48,4 @@ public class TestFastDFS {
 		System.out.println(string);
 	}
 }
+*/

@@ -1,3 +1,4 @@
+/*
 package com.taotao.jedis;
 
 import org.junit.Test;
@@ -8,12 +9,14 @@ import redis.clients.jedis.JedisCluster;
 import java.util.HashSet;
 import java.util.Set;
 
+*/
 /**
  * @author 张剑锋
  * @date 2020/2/29 - 15:31
  *
  * Jedis测试
- */
+ *//*
+
 public class TestJedis {
 
     @Test
@@ -29,7 +32,8 @@ public class TestJedis {
         jedis.close();
     }
 
-    /*@Test
+    */
+/*@Test
     public void testJedisCluster() throws Exception {
         //创建一个JedisCluster对象，构造参数Set类型，集合中每个元素是HostAndPort类型
         Set<HostAndPort> nodes = new HashSet<>();
@@ -48,6 +52,8 @@ public class TestJedis {
         System.out.println(result);
         //系统关闭前，关闭JedisCluster
         jedisCluster.close();
-    }*/
+    }*//*
+
 
 }
+*/
