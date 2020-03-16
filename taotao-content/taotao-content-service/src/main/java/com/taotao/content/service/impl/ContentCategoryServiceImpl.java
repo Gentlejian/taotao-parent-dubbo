@@ -4,16 +4,15 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import com.taotao.content.service.ContentCategoryService;
+import com.taotao.mapper.TbContentCategoryMapper;
+import com.taotao.pojo.TbContentCategory;
+import com.taotao.pojo.TbContentCategoryExample;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.taotao.common.pojo.EasyUITreeNode;
 import com.taotao.common.pojo.TaotaoResult;
-import com.taotao.content.service.ContentCategoryService;
-import com.taotao.mapper.TbContentCategoryMapper;
-import com.taotao.pojo.TbContentCategory;
-import com.taotao.pojo.TbContentCategoryExample;
-import com.taotao.pojo.TbContentCategoryExample.Criteria;
 
 /**
  * @author zhangjianfeng
@@ -33,7 +32,7 @@ public class ContentCategoryServiceImpl implements ContentCategoryService {
 		//根据parentId查询子节点列表
 		TbContentCategoryExample example = new TbContentCategoryExample();
 		//设置查询条件
-		Criteria criteria = example.createCriteria();
+		TbContentCategoryExample.Criteria criteria = example.createCriteria();
 		criteria.andParentIdEqualTo(parentId);
 		//执行查询
 		List<TbContentCategory> list = contentCategoryMapper.selectByExample(example);

@@ -5,17 +5,16 @@ import java.util.List;
 
 import com.taotao.common.utils.JsonUtils;
 import com.taotao.jedis.JedisClient;
+import com.taotao.content.service.ContentService;
+import com.taotao.mapper.TbContentMapper;
+import com.taotao.pojo.TbContent;
 import com.taotao.pojo.TbContentExample;
-import com.taotao.pojo.TbContentExample.Criteria;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import com.taotao.common.pojo.TaotaoResult;
-import com.taotao.content.service.ContentService;
-import com.taotao.mapper.TbContentMapper;
-import com.taotao.pojo.TbContent;
 
 @Service
 public class ContentServiceImpl implements ContentService {
@@ -67,7 +66,7 @@ public class ContentServiceImpl implements ContentService {
         }
         //缓存中没有应用，需要查询数据库
 		TbContentExample example = new TbContentExample();
-		Criteria criteria =example.createCriteria();
+		TbContentExample.Criteria criteria =example.createCriteria();
 		//设置查询条件
 		criteria.andCategoryIdEqualTo(cid);
 		//执行查询
