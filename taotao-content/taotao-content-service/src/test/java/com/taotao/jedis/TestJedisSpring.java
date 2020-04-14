@@ -1,15 +1,13 @@
-/*
 package com.taotao.jedis;
 
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-*/
 /**
  * @author 张剑锋
  * @date 2020/2/29 - 18:45
- *//*
+ */
 
 public class TestJedisSpring {
 
@@ -25,4 +23,3 @@ public class TestJedisSpring {
         System.out.println(result);
     }
 }
-*/
